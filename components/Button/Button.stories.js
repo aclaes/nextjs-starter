@@ -7,6 +7,10 @@ const config = {
 };
 export default config;
 
-export function Default() {
+export function Primary() {
 	return <Button>Click me</Button>;
+}
+
+export function Secondary() {
+	return <Button color="secondary">Click me</Button>;
 }

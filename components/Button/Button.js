@@ -1,7 +1,10 @@
-export default function Button({ children, ...otherProps }) {
-	return (
-		<button {...otherProps} type="button">
-			{children}
-		</button>
-	);
-}
+import styled from 'styled-components';
+
+const Button = styled.button`
+	border: none;
+	padding: 5px 10px;
+	background-color: var(--${({ color = 'primary' }) => color}-color);
+	color: white;
+`;
+
+export default Button;
